@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5f0;
+    color: #2d2926;
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(135deg, #f0e9df 0%, #e3eee6 100%);
+}
+
+.hero h1 {
+    max-width: 680px;
+}
+
+.hero-card,
+.about-card {
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 18px;
+    padding: 2rem;
+}
+
+.hero-icon {
+    color: #198754;
+    display: block;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+/* Menu */
+.navbar-brand {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Título */
+main h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0.75rem 1.5rem rgba(45, 41, 38, 0.12) !important;
+}
+
+/* Imagem dos cards */
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+/* Título do card */
+.card-title {
+    font-weight: bold;
+}
+
+/* Botão */
+.btn-primary {
+    border-radius: 14px;
+}
+
+#contador-carrinho {
+    margin-left: 4px;
+}
+
+.item-carrinho .btn-group .disabled {
+    opacity: 1;
+    color: #212529;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 80px;
+}
+
+#mensagem-compra {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1050;
+}
+
+.interaction-panel {
+    background-color: #f1f6f2;
+    border-radius: 18px;
+}
+
+.interaction-details {
+    border-left: 4px solid #198754;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+}
+
+.interactive-shape {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    border-radius: 32% 68% 55% 45% / 45% 40% 60% 55%;
+    background-color: #198754;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.interactive-shape.alternate {
+    background-color: #d97706;
+}
+
+.contact-banner {
+    background-color: #f8f5f0;
+    border: 1px solid #e5ded4;
+    border-radius: 18px;
+}

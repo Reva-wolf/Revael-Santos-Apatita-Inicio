@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apatita</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">Apatita</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-outline-light position-relative" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#carrinho" aria-controls="carrinho">
+                            Carrinho
+                            <span id="contador-carrinho" class="badge rounded-pill bg-danger">0</span>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="inicio">
+        <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="badge text-bg-success mb-3">Feito à mão e com reaproveitamento</span>
+                    <h1 class="display-4 fw-bold">Peças que dão vida aos seus espaços.</h1>
+                    <p class="lead">Conheça a Apatita e descubra como pequenos detalhes podem transformar sua casa.</p>
+                    <a class="btn btn-primary btn-lg" href="#produtos">Conhecer produtos</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-card shadow-sm">
+                        <span class="hero-icon" aria-hidden="true">✦</span>
+                        <h2 class="h4">Interações com jQuery</h2>
+                        <p class="mb-0">Passe o mouse, clique e experimente os eventos desta página.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--conteudo-->
+    <main class="container my-5">
+
+        <div id="produtos" class="text-center mb-5">
+            <h1>Produtos</h1>
+            <p class="text-muted">
+                Confira alguns dos nossos produtos e passe o mouse sobre os cards.
+            </p>
+        </div>
+
+        <!--CARDS-->
+        <div class="row g-4">
+
+            <!--CARD1-->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                       src="assets/Alimentador de passaros.jpg"
+                        class="card-img-top"
+                        alt="Produto 1">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            ALIMENTADOR DE PÁSSAROS
+                        </h5>
+
+                        <p class="card-text">
+                            Alimentador de pássaros, feito em madeira de reaproveitamento.
+                        </p>
+
+                        <h5 class="text-primary">
+                            R$ 49,90
+                        </h5>
+
+                        <button class="btn btn-primary btn-comprar" data-produto="Alimentador de pássaros" data-preco="49.90">
+                            Adicionar ao carrinho
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                       src="assets/Casinha decorativa.webp"
+                        class="card-img-top"
+                        alt="Produto 2">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            CASINHA DECORATIVA
+                        </h5>
+
+                        <p class="card-text">
+                            Casinha decorativa, feita em MDF.
+                        </p>
+
+                        <h5 class="text-primary">
+                            R$ 79,90
+                        </h5>
+
+                        <button class="btn btn-primary btn-comprar" data-produto="Casinha decorativa" data-preco="79.90">
+                            Adicionar ao carrinho
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm">
+
+                    <img
+                        src="assets/Kit mesa + cadeira.webp"
+                        class="card-img-top"
+                        alt="Produto 3">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            KIT MESA + CADEIRA
+                        </h5>
+
+                        <p class="card-text">
+                            Kit mesa + cadeira em madeira de reaproveitamento.
+                        </p>
+
+                        <h5 class="text-primary">
+                            R$ 99,90
+                        </h5>
+
+                        <button class="btn btn-primary btn-comprar" data-produto="Kit mesa + cadeira" data-preco="99.90">
+                            Adicionar ao carrinho
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section id="interacoes" class="interaction-panel mt-5 p-4 p-md-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <span class="text-uppercase small fw-bold text-primary">Laboratório de eventos</span>
+                    <h2 class="mt-2">Experimente os controles</h2>
+                    <p class="text-muted">Esta área demonstra eventos de clique, duplo clique, teclado e animações feitos com jQuery.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <button id="alternar-detalhes" class="btn btn-primary" type="button" aria-expanded="false">
+                            Mostrar detalhes
+                        </button>
+                        <button id="animar-forma" class="btn btn-outline-primary" type="button">
+                            Animar forma
+                        </button>
+                        <button id="resetar-forma" class="btn btn-outline-secondary" type="button">
+                            Resetar
+                        </button>
+                    </div>
+                    <div id="detalhes-interacao" class="interaction-details mt-3" hidden>
+                        <p class="mb-0">Clique duas vezes na forma para mudar sua cor. Digite seu nome para receber uma saudação.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div id="forma-interativa" class="interactive-shape" title="Clique duas vezes para mudar a cor"
+                        role="button" tabindex="0" aria-label="Forma interativa"></div>
+                    <label class="visually-hidden" for="nome-visitante">Seu nome</label>
+                    <input id="nome-visitante" class="form-control mt-3" type="text" placeholder="Digite seu nome">
+                    <p id="saudacao" class="small text-primary mt-2 mb-0" role="status"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="row align-items-center g-4 mt-5">
+            <div class="col-md-7">
+                <span class="text-uppercase small fw-bold text-primary">Sobre a Apatita</span>
+                <h2 class="mt-2">Design com propósito</h2>
+                <p class="text-muted mb-0">Criamos peças funcionais e acolhedoras a partir de materiais que merecem uma nova história.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="about-card p-4">
+                    <strong>Produção consciente</strong>
+                    <p class="mb-0 mt-2 text-muted">Cada produto é pensado para durar e combinar com o seu jeito de morar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-banner text-center mt-5 p-4">
+            <h2 class="h4">Gostou de alguma peça?</h2>
+            <p class="mb-3">Fale com a gente e tire suas dúvidas.</p>
+            <a class="btn btn-outline-dark" href="mailto:contato@apatita.com">Entrar em contato</a>
+        </section>
+
+    </main>
+
+    <div id="mensagem-compra" class="alert alert-success text-center shadow" role="status"></div>
+
+    <aside class="offcanvas offcanvas-end" tabindex="-1" id="carrinho" aria-labelledby="carrinho-titulo">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title h4" id="carrinho-titulo">Seu carrinho</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div id="itens-carrinho" class="flex-grow-1">
+                <p class="text-muted text-center">Seu carrinho está vazio.</p>
+            </div>
+            <div class="border-top pt-3">
+                <div class="d-flex justify-content-between fw-bold mb-3">
+                    <span>Total</span>
+                    <span id="total-carrinho">R$ 0,00</span>
+                </div>
+                <button id="finalizar-compra" class="btn btn-success w-100" type="button" disabled>
+                    Finalizar compra
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-dark text-white text-center py-3">
+
+        <p class="mb-0">
+            &copy; 2016 Apatita - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <!-- jQuery e scripts do projeto -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
